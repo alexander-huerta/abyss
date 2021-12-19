@@ -1,3 +1,5 @@
+This is a project I am working on suing MySQL  + Express + React + Node.js 
+
 Spend less time deciding on what to watch, and more time enjoying cinema!
 
 Abyss was made to help sort through the endless movie titles available to us through our various streaming services. Instead of jumping from service to service to see what is currently streaming, you can browse all movies available to be played at any given moment using Abyss.
