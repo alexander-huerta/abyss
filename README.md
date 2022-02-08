@@ -1,4 +1,3 @@
-This is a project I am working on suing MySQL  + Express + React + Node.js 
 
 Spend less time deciding on what to watch, and more time enjoying cinema!
 
