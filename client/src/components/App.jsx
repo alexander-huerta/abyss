@@ -1,6 +1,9 @@
 import React from 'react';
 import axios from 'axios';
 import MovieList from './MovieList.jsx';
+import NavBar from './NavBar.jsx';
+
+import Container from '@material-ui/core/Container';
 
 
 class App extends React.Component {
@@ -27,7 +30,10 @@ class App extends React.Component {
   render () {
     return (
       <div>
-        <MovieList movies={this.state.movies}/>
+        <Container maxwidth="md">
+          <NavBar/>
+          <MovieList movies={this.state.movies}/>
+        </Container>
       </div>
     )
   }
