@@ -19,6 +19,11 @@
   },
   "homepage": "https://github.com/alexander-huerta/abyss#readme",
   "dependencies": {
+    "@emotion/react": "^11.8.1",
+    "@emotion/styled": "^11.8.1",
+    "@material-ui/core": "^4.12.3",
+    "@mui/icons-material": "^5.5.0",
+    "@mui/material": "^5.5.0",
     "axios": "^0.24.0",
     "body-parser": "^1.19.1",
     "express": "^4.17.2",
