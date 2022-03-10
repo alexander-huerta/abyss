@@ -2,6 +2,7 @@ import React from 'react';
 import axios from 'axios';
 import MovieList from './MovieList.jsx';
 import NavBar from './NavBar.jsx';
+import GenreSelect from './GenreSelect.jsx';
 
 import Container from '@material-ui/core/Container';
 
@@ -22,7 +23,6 @@ class App extends React.Component {
     axios.get('/movies', (req, receivedMovies) => {})
       .then((receivedMovies) => {
         this.setState({movies: receivedMovies.data.results})
-        console.log(this.state.movies)
       })
       .catch((err) => console.log(err))
   }
@@ -32,6 +32,7 @@ class App extends React.Component {
       <div>
         <Container maxwidth="md">
           <NavBar/>
+          <GenreSelect/>
           <MovieList movies={this.state.movies}/>
         </Container>
       </div>
