@@ -22,8 +22,23 @@ app.get('/movies', (req, res) => {
   .catch((err) => res.status(404).json({ error: err }))
 })
 
+app.get('/movies/genre', (req, res) => {
+  helpers.getMoviesByGenre(req.query.genre)
+  .then((movies) => {
+    console.log('2 received movies by genre at server')
+    res.send(movies.data)
+  })
+  .catch((err) => res.status(404).json({ error: err }))
+})
 
-
+app.get('/movies/term', (req, res) => {
+  helpers.getMoviesByTerm(req.query.term)
+  .then((movies) => {
+    console.log('res from API')
+    res.send(movies.data)
+  })
+  .catch((err) => res.status(404).json({ error: err }))
+})
 
 
 

@@ -10,10 +10,14 @@ import InfoIcon from '@mui/icons-material/Info';
 import StarOutlineOutlinedIcon from '@mui/icons-material/StarOutlineOutlined';
 
 
-function MovieList ({movies}) {
+const MovieList = ({ movies }) => {
+
     return (
+
       <ImageList cols={3} gap={30}>
+
         {movies.map((movie) => (
+
           <ImageListItem sx={{ width: 300, height: 300 }} key={movie.id}>
             <img
               src={`https://image.tmdb.org/t/p/original${movie.backdrop_path}`}
@@ -35,7 +39,9 @@ function MovieList ({movies}) {
           />
           </ImageListItem>
         ))}
-    </ImageList>
+
+      </ImageList>
+
   )
 }
 

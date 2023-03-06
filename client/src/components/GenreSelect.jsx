@@ -1,16 +1,15 @@
-
 import React from 'react';
-
 import Box from '@mui/material/Box';
 import InputLabel from '@mui/material/InputLabel';
 import FormControl from '@mui/material/FormControl';
 import NativeSelect from '@mui/material/NativeSelect';
 
 
-function GenreSelect () {
+function GenreSelect ({getMoviesByGenre}) {
 
   const handleChange = (e) => {
     e.preventDefault()
+    getMoviesByGenre(e.target.value)
     console.log(e.target.value);
   };
 

@@ -57,7 +57,7 @@ const handleChange = (e) => {
   console.log(e.target.value);
 };
 
-export default function NavBar() {
+export default function NavBar({getMoviesByTerm}) {
 
   return (
     <Box sx={{ flexGrow: 1 }}>
@@ -102,7 +102,7 @@ export default function NavBar() {
               placeholder="Search…"
               inputProps={{ 'aria-label': 'search'} }
               onChange={handleChange}
-              onClick={()=> console.log('SEARCH  w click')}
+              onClick={()=> getMoviesByTerm('batman')}
 
             />
           </Search>
